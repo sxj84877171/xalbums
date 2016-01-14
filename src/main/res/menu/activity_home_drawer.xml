@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/left_menu_check_update"
+            android:icon="@drawable/icon_update"
+            android:title="@string/left_menu_check_update" />
+        <item
+            android:id="@+id/left_menu_share"
+            android:icon="@drawable/icon_share"
+            android:title="@string/left_menu_share" />
+        <item
+            android:id="@+id/left_menu_feedback"
+            android:icon="@drawable/icon_feedback"
+            android:title="@string/left_menu_feedback" />
+        <item
+            android:id="@+id/left_menu_about_us"
+            android:icon="@drawable/icon_about"
+            android:title="@string/left_menu_about_us" />
+        <item
+            android:id="@+id/left_menu_exit"
+            android:icon="@drawable/icon_exit"
+            android:title="@string/left_menu_exit" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fun"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/main_inf0"
+            android:layout_width="234dp"
+            android:layout_height="234dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_circle_1"
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:src="@drawable/img_home_bgcircle_gray"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/imageView_circle_2"
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:clickable="true"
+                android:src="@drawable/bg_main_btn_photo"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_home_search"
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:src="@drawable/img_home_search"
+                android:visibility="gone" />
+
+            <com.sw.xalbums.view.RoundProgressBar xmlns:android_custom="http://schemas.android.com/apk/res/com.sw.xalbums"
+                android:id="@+id/roundProgressBar1"
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android_custom:roundColor="#00000000"
+                android_custom:roundProgressColor="#0088dd"
+                android_custom:roundWidth="2dp"
+                android_custom:textColor="#00000000" />
+
+            <com.sw.xalbums.view.RoundProgressBar xmlns:android_custom="http://schemas.android.com/apk/res/com.sw.xalbums"
+                android:id="@+id/roundProgressBar2"
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android_custom:roundColor="#00000000"
+                android_custom:roundProgressColor="#7F0088dd"
+                android_custom:roundWidth="2dp"
+                android_custom:textColor="#00000000" />
+
+
+            <TextView
+                android:id="@+id/main_use_des"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/main_fragment_used_des"
+                android:textColor="#454545"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/scan_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_fragment_analyze_album"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/main_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="#0088dd"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/main_per_fu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/main_per"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/main_per"
+                    android:text="%"
+                    android:textColor="#0088dd"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/arr_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:paddingBottom="100dp"
+                android:paddingRight="67dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/main_pointer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/icon_point_red" />
+
+                <ImageView
+                    android:id="@+id/main_arr"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:clickable="true"
+                    android:src="@drawable/bg_main_icon_go" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/main_used"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/main_fragment_used_info"
+                android:textColor="#454545"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/main_free_space"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_inf0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="@string/main_fragment_free_space"
+            android:textColor="#454545"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fun"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/fun_"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/function_1"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_func_1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_func_1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_func_1" />
+
+                <LinearLayout
+                    android:id="@+id/icon_func_1_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/icon_func_1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_fragment_fun_1"
+                        android:textColor="#454545"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/main_fragment_fun_1_info"
+                        android:textColor="#999999"
+                        android:textSize="9dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_go_gray" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/function_2"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_func_2"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_func_2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_func_2" />
+
+                <LinearLayout
+                    android:id="@+id/icon_func_2_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/icon_func_2"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_fragment_fun_2"
+                        android:textColor="#454545"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/main_fragment_fun_2_info"
+                        android:textColor="#999999"
+                        android:textSize="9dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_go_gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/function_3"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_func_3"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/icon_func_3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/icon_func_3" />
+
+                <LinearLayout
+                    android:id="@+id/icon_func_3_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/icon_func_3"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_fragment_fun_3"
+                        android:textColor="#454545"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/main_fragment_fun_3_info"
+                        android:textColor="#999999"
+                        android:textSize="9dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_go_gray" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fun_replace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55ffffff"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_14_454545"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="@string/input_albums_name"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/text_16_454545"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingBottom="15dp"
+                android:visibility="gone" />
+             <EditText
+                 android:id="@+id/inputMessage"
+                 style="@style/text_16_454545"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="left|bottom"
+                 android:lineSpacingMultiplier="1.5"
+                 android:visibility="gone"
+                 android:hint="@string/input_albums_name"
+                 android:drawableRight="@drawable/btn_clear_normal"
+                 android:background="@drawable/bg_text_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/positiveButton"
+                style="@style/text_12_ff4081"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/yes_button_content" />
+
+            <TextView
+                android:id="@+id/negativeButton"
+                style="@style/text_12_ff4081"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/positiveButton"
+                android:gravity="center"
+                android:text="@string/no_button_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

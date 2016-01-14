@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小强相册</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- 侧滑菜单 -->
+    <string name="left_menu_check_update">检查更新</string>
+    <string name="left_menu_share">分享小强</string>
+    <string name="left_menu_feedback">意见反馈</string>
+    <string name="left_menu_about_us">关于我们</string>
+    <string name="left_menu_exit">退出</string>
+    <string name="all_photo">所有照片</string>
+    <string name="new_photo_album">新建相册</string>
+    <string name="yes_button_content">确认</string>
+    <string name="no_button_content">取消</string>
+    <string name="input_albums_name">请输入相册名称</string>
+    <string name="delete_albums">删除相册</string>
+    <string name="delete_albums_message">确认删除相册“%1$s”吗？相册中的照片将回到所有相册中。</string>
+
+
+    <string name="main_fragment_used_des">相册空间占用</string>
+    <string name="main_fragment_analyze_album">正在分析相册...</string>
+    <string name="main_fragment_used_info">%1$s/%2$s</string>
+    <string name="main_fragment_free_space">剩余空间:%s</string>
+    <string name="main_fragment_fun_1">大照片瘦身</string>
+    <string name="main_fragment_fun_1_info">在不损失画质的情况下大幅缩减图片大小</string>
+    <string name="main_fragment_fun_2">相似图查找</string>
+    <string name="main_fragment_fun_2_info">搜索重复照片,删除多余照片</string>
+    <string name="main_fragment_fun_3">无用图清理</string>
+    <string name="main_fragment_fun_3_info">清理多余图标、截图等图片</string>
+
+    <!--sroll-->
+    <string name="main_fragment_sroll_checking">检测中(%1$s/%2$s)</string>
+    <string name="main_fragment_sroll_checking_danwei">张</string>
+    <string name="main_fragment_sroll_shoushen">大照片可进行瘦身处理</string>
+    <string name="main_fragment_sroll_shoushen_des">瘦身后图片会覆盖原图片</string>
+    <string name="main_fragment_sroll_cancle">停止</string>
+    <string name="main_fragment_sroll_share">分享</string>
+    <string name="main_fragment_sroll_ok">完成</string>
+    <string name="main_fragment_sroll_one_shoushen">一键瘦身(已选%s张)</string>
+    <string name="main_fragment_sroll_one_shoushen__deal_des">处理中...(%1$s/%2$s)</string>
+    <string name="main_fragment_sroll_shoushen_ok_des">瘦身%1$s张照片,节约了%2$s</string>
+    <string name="main_fragment_sroll_shoushen_has">已瘦身</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sw.xalbums.view.DragFrameLayout
+        android:id="@+id/dragframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sw.xalbums.fragment.AllPhotoFragment"
+        tools:showIn="@layout/content_home">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee">
+
+            <ListView
+                android:id="@+id/leftPanel"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:orientation="horizontal">
+
+            </ListView>
+
+            <com.sw.xalbums.view.RecyclerTouchView
+                android:id="@+id/rvView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </com.sw.xalbums.view.DragFrameLayout>
+    <!--/////////////////Scroll///////////////////-->
+    <RelativeLayout
+        android:id="@+id/one_key_shoushen_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#181c1f"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/one_key_shoushen_button"
+            android:layout_width="320dp"
+            android:layout_height="44dp"
+            android:background="@drawable/button_shape"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/main_fragment_sroll_one_shoushen"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/shoushen_dealing_include_view"
+        layout="@layout/shoushen_dealing_view" />
+</RelativeLayout>
